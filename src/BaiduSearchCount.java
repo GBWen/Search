@@ -13,14 +13,18 @@ public class BaiduSearchCount
 {
     public int Search(String keyWord)
     {
-        String url = "http://www.baidu.com/s?pn="+0+"&wd=" + keyWord;
+        String url = "http://www.baidu.com/s?pn="+10+"&wd=" + keyWord;
+        //System.out.println(url);
+        //System.out.println();
         try
         {
-            Document document = Jsoup.connect(url).timeout(5000).get();
+            //Document document = Jsoup.connect(url).timeout(5000).get();
+            Document document = Jsoup.connect(url).get();
+            //System.out.print(document);
             String cssQuery = "html body div div div div.nums";
             Element totalElement = document.select(cssQuery).first();
-            String totalText = null;
-            totalText = totalElement.text();
+            //System.out.println(totalElement);
+            String totalText  = totalElement.text();
             String regEx="[^0-9]";
             Pattern pattern = Pattern.compile(regEx);
             Matcher matcher = pattern.matcher(totalText);

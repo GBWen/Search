@@ -13,9 +13,9 @@ public class SaerchCount
 
         try
         {
-            FileReader fr = new FileReader("/home/gbw/IdeaProjects/Search/in.txt");
+            FileReader fr = new FileReader("/home/gbw/IdeaProjects/Search/in3.txt");
             BufferedReader br = new BufferedReader(fr);
-            FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/out2.txt");
+            FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/out3.txt");
             int Num = 0;
             while(br.ready())
             {
