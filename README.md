@@ -11,7 +11,7 @@ Search
 
 2.SearchCount
 ---
-主函数，调用GetName，然后输入in.txt，调用BaiduSearhCount，返回搜索条目数。
+主函数，调用GetName，然后输入in.txt，调用BaiduSearhCount，返回搜索条目数，打印到baidu.out.txt。
 
 3.BaiduSearchCount
 ---
