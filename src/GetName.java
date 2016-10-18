@@ -20,11 +20,9 @@ public class GetName
         try
         {
 
-            JsonParser parser=new JsonParser();  //创建JSON解析器
-            //JsonObject object=(JsonObject) parser.parse(new FileReader("/home/gbw/IdeaProjects/Search/世界AI公司.json"));
-            //FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/in(全球).txt");
-            JsonObject object=(JsonObject) parser.parse(new FileReader("/home/gbw/IdeaProjects/Search/中国AI公司(全称).json"));
-            FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/in(中国).txt");
+            JsonParser parser=new JsonParser();
+            JsonObject object=(JsonObject) parser.parse(new FileReader("/home/gbw/IdeaProjects/Search/io/中国AI公司(全称).json"));
+            FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/io/in(中国).txt");
             JsonArray array=object.get("gbw").getAsJsonArray();    //得到为json的数组
             for(int i=0;i<array.size();i++)
             {

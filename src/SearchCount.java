@@ -13,9 +13,9 @@ public class SearchCount
 
         try
         {
-            FileReader fr = new FileReader("/home/gbw/IdeaProjects/Search/in(中国).txt");
+            FileReader fr = new FileReader("/home/gbw/IdeaProjects/Search/io/in(中国).txt");
             BufferedReader br = new BufferedReader(fr);
-            FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/baidu.out(中国).txt");
+            FileWriter fw = new FileWriter("/home/gbw/IdeaProjects/Search/io/baidu.out(中国).txt");
             int Num = 0;
             while(br.ready())
             {
