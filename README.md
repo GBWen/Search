@@ -21,3 +21,4 @@ Search
 Document document = Jsoup.connect(url).get();
 Document document = Jsoup.connect(url).timeout(5000).get();
 有时设置超时时间连不上返回空指针，有时不设置就怎么也连不上，MDZZ。。。
+不不不，其实是我的问题，后来我打了下log，发现是向百度请求数据过多，要求我输入验证码，这就很尴尬了，而且在浏览器端直接访问不需要输入验证码，后来我想了想，把cookies清了下，ok程序继续。
