@@ -4,7 +4,7 @@ import java.io.*;
  * Created by gbw on 16-10-17.
  */
 
-public class SaerchCount
+public class SearchCount
 {
     public static void main(String[] args)
     {
@@ -44,7 +44,7 @@ public class SaerchCount
                     //System.out.println(sub);
                     System.out.println(Num+ " " + keyWord + " " + baiduCount);
                     fw.write(keyWord);
-                    fw.write(",");
+                    fw.write(" / ");
                     fw.write(baiduCount + "\n");
                 }
             }

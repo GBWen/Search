@@ -13,7 +13,7 @@ public class BaiduSearchCount
 {
     public int Search(String keyWord)
     {
-        String url = "http://www.baidu.com/s?pn="+10+"&wd=" + keyWord;
+        String url = "http://www.baidu.com/s?pn="+10+"&wd=\"" + keyWord + "\"" ;
         //System.out.println(url);
         //System.out.println();
         try
