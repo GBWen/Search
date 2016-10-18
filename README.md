@@ -16,3 +16,8 @@ Search
 3.BaiduSearchCount
 ---
 使用jsoup的jar包，正则表达式匹配到搜索条目数，然后返回结果。
+
+使用jsoup的时候有个怪怪的问题：
+Document document = Jsoup.connect(url).get();
+Document document = Jsoup.connect(url).timeout(5000).get();
+有时设置超时时间连不上返回空指针，有时不设置就怎么也连不上，MDZZ。。。
